@@ -1,3 +1,6 @@
 # pycache files
 __pycache__/
 interface/__pycache__/
+
+# files directory
+files/
