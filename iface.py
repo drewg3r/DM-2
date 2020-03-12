@@ -75,22 +75,46 @@ class MyApp(QtWidgets.QMainWindow, interface.w1.Ui_MainWindow):
             self.listWidget_set_b.addItems(list(core.B))
 
     def read_a_btn(self):
-        pass
+        """Reads file's content to set A and to A's listWidget"""
+        with open(core.a_filename, "r") as f:
+            core.A = set(list(f.read().split(", ")))
+            self.listWidget_set_a.clear()
+            self.listWidget_set_a.addItems(list(core.A))
 
     def save_a_btn(self):
-        pass
+        """Saves set A content to file"""
+        with open(core.a_filename, "w+") as f:
+            s = ""
+            for e in core.A:
+                s = s + str(e) + ", "
+            s = s[:-2]
+            f.write(s)
 
     def clear_a_btn(self):
-        pass
+        """Clearing set A and A's listWidget"""
+        core.A = set()
+        self.listWidget_set_a.clear()
 
     def read_b_btn(self):
-        pass
+        """Reads file's content to set B and to B's listWidget"""
+        with open(core.b_filename, "r") as f:
+            core.B = set(list(f.read().split(", ")))
+            self.listWidget_set_b.clear()
+            self.listWidget_set_b.addItems(list(core.B))
 
     def save_b_btn(self):
-        pass
+        """Saves set B content to file"""
+        with open(core.b_filename, "w+") as f:
+            s = ""
+            for e in core.B:
+                s = s + str(e) + ", "
+            s = s[:-2]
+            f.write(s)
 
     def clear_b_btn(self):
-        pass
+        """Clearing set B and B's listWidget"""
+        core.B = set()
+        self.listWidget_set_b.clear()
 
     def mtr_s_btn(self):
         pass
