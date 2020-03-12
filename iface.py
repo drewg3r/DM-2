@@ -78,6 +78,7 @@ class MyApp(QtWidgets.QMainWindow, interface.w1.Ui_MainWindow):
         """Reads file's content to set A and to A's listWidget"""
         with open(core.a_filename, "r") as f:
             core.A = set(list(f.read().split(", ")))
+            core.A = core.A - set("")
             self.listWidget_set_a.clear()
             self.listWidget_set_a.addItems(list(core.A))
 
@@ -99,6 +100,7 @@ class MyApp(QtWidgets.QMainWindow, interface.w1.Ui_MainWindow):
         """Reads file's content to set B and to B's listWidget"""
         with open(core.b_filename, "r") as f:
             core.B = set(list(f.read().split(", ")))
+            core.B = core.B - set("")
             self.listWidget_set_b.clear()
             self.listWidget_set_b.addItems(list(core.B))
 
