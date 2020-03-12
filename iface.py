@@ -56,7 +56,23 @@ class MyApp(QtWidgets.QMainWindow, interface.w1.Ui_MainWindow):
             self.label_9.setText("??")
 
     def cpy_btn(self):
-        pass
+        """Function for copy button"""
+        smen = [item.text() for item in self.listWidget_men_names.selectedItems()]
+        swomen = [item.text() for item in self.listWidget_women_names.selectedItems()]
+        try:
+            smen.remove("- None -")
+            swomen.remove("- None -")
+        except:
+            pass
+        if self.radioButton_a.isChecked():
+            core.A = core.A.union(set(smen + swomen))
+            self.listWidget_set_a.clear()
+            self.listWidget_set_a.addItems(list(core.A))
+
+        if self.radioButton_b.isChecked():
+            core.B = core.B.union(set(smen + swomen))
+            self.listWidget_set_b.clear()
+            self.listWidget_set_b.addItems(list(core.B))
 
     def read_a_btn(self):
         pass
