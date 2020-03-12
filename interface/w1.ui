@@ -513,7 +513,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_clc_rms">
+       <widget class="QPushButton" name="pushButton_mtr_rms">
         <property name="statusTip">
          <string>Матричне представлення відношення R\S</string>
         </property>
