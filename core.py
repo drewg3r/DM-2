@@ -4,8 +4,32 @@ A = set()
 B = set()
 U = set()
 
-men_names = ["- None -", "m1", "m2", "m3"]
-women_names = ["- None -", "w1", "w2", "w3"]
+men_names = [
+    "- None -",
+    "Andrew",
+    "Vlad",
+    "Eugene",
+    "Anton",
+    "Michael",
+    "Sergey",
+    "Dima",
+    "Taras",
+    "Bogdan",
+    "Denis",
+]
+women_names = [
+    "- None -",
+    "Alionka",
+    "Nastya",
+    "Anya",
+    "Sasha",
+    "Yulya",
+    "Sonya",
+    "Masha",
+    "Kate",
+    "Polly",
+    "Dasha",
+]
 
 a_filename = "files/a.txt"
 b_filename = "files/b.txt"
