@@ -87,11 +87,14 @@ class MyApp(QtWidgets.QMainWindow, interface.w1.Ui_MainWindow):
 
     def read_a_btn(self):
         """Reads file's content to set A and to A's listWidget"""
-        with open(core.a_filename, "r") as f:
-            core.A = set(list(f.read().split(", ")))
-            core.A = core.A - set("")
-            self.listWidget_set_a.clear()
-            self.listWidget_set_a.addItems(list(core.A))
+        try:
+            with open(core.a_filename, "r") as f:
+                core.A = set(list(f.read().split(", ")))
+                core.A = core.A - set("")
+                self.listWidget_set_a.clear()
+                self.listWidget_set_a.addItems(list(core.A))
+        except:
+            pass
 
         core.S, core.R = fr_generator.generate(
             core.A, core.B, core.s_possibility, core.r_possibility
@@ -117,12 +120,14 @@ class MyApp(QtWidgets.QMainWindow, interface.w1.Ui_MainWindow):
 
     def read_b_btn(self):
         """Reads file's content to set B and to B's listWidget"""
-        with open(core.b_filename, "r") as f:
-            core.B = set(list(f.read().split(", ")))
-            core.B = core.B - set("")
-            self.listWidget_set_b.clear()
-            self.listWidget_set_b.addItems(list(core.B))
-
+        try:
+            with open(core.b_filename, "r") as f:
+                core.B = set(list(f.read().split(", ")))
+                core.B = core.B - set("")
+                self.listWidget_set_b.clear()
+                self.listWidget_set_b.addItems(list(core.B))
+        except:
+            pass
         core.S, core.R = fr_generator.generate(
             core.A, core.B, core.s_possibility, core.r_possibility
         )
