@@ -33,3 +33,9 @@ women_names = [
 
 a_filename = "files/a.txt"
 b_filename = "files/b.txt"
+
+s_possibility = 5
+r_possibility = 1
+
+S = set()
+R = set()

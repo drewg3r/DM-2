@@ -475,7 +475,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_mtr_s">
         <property name="statusTip">
-         <string>Матричне представлення відношення  S</string>
+         <string>Графічне представлення відношення  S</string>
         </property>
         <property name="text">
          <string>S</string>
@@ -485,7 +485,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_mtr_r">
         <property name="statusTip">
-         <string>Матричне представлення відношення R</string>
+         <string>Графічне представлення відношення R</string>
         </property>
         <property name="text">
          <string>R</string>
@@ -495,7 +495,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_mtr_rus">
         <property name="statusTip">
-         <string>Матричне представлення відношення R S</string>
+         <string>Графічне представлення відношення R S</string>
         </property>
         <property name="text">
          <string>R ⋃ S</string>
@@ -505,7 +505,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_mtr_rds">
         <property name="statusTip">
-         <string>Матричне представлення відношення R S</string>
+         <string>Графічне представлення відношення R S</string>
         </property>
         <property name="text">
          <string>R ⋂ S</string>
@@ -515,7 +515,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_mtr_rms">
         <property name="statusTip">
-         <string>Матричне представлення відношення R\S</string>
+         <string>Графічне представлення відношення R\S</string>
         </property>
         <property name="text">
          <string>R \ S</string>
@@ -525,7 +525,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_mtr_umr">
         <property name="statusTip">
-         <string>Матричне представлення відношення U \ R</string>
+         <string>Графічне представлення відношення U \ R</string>
         </property>
         <property name="text">
          <string>U \ R</string>
@@ -535,7 +535,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_mtr_st">
         <property name="statusTip">
-         <string>Матричне представлення відношення S^(-1)</string>
+         <string>Графічне представлення відношення S^(-1)</string>
         </property>
         <property name="text">
          <string>S^( -1)</string>
