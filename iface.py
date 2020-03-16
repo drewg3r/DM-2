@@ -1,6 +1,7 @@
 import sys
 from PyQt5 import QtWidgets
 import core, interface.w1, interface.about
+import ab_iface
 import fr_generator
 from PyQt5.QtWidgets import *
 import networkx as nx
@@ -441,5 +442,5 @@ class MyApp(QtWidgets.QMainWindow, interface.w1.Ui_MainWindow):
         plt.show()
 
     def abt_btn(self):
-        self.window = ab_iface.MyForm2()
+        self.window = ab_iface.MyFormAbout()
         self.window.show()
