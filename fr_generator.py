@@ -34,5 +34,6 @@ def generate(A, B, s_possibility, r_possibility):
                             if random.randint(1, r_possibility) == 1:
                                 R.add((f, b))
                                 used_fathers.add(f)
+                                used_boys.add(b)
 
     return S, R
