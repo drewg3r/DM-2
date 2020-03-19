@@ -1,5 +1,10 @@
-# Core file for project.
-# Here are all the global vars used in project.
+"""
+ * Copyright © 2020 drewg3r
+ * https://github.com/drewg3r/DM-2
+
+core.py: core file for project. Here are all the global vars used in project.
+"""
+
 A = set()
 B = set()
 U = set()

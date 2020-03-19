@@ -1,7 +1,13 @@
 """
-Generates random possible connection between the components of two given sets
-ASB, if A is the father of B
+ * Copyright © 2020 drewg3r
+ * https://github.com/drewg3r/DM-2
+
+fr_generator.py: generates finitary relations S and R from A and B sets.
+                 aSb if a is the father of b.
+                 aRb if a is the father-in-law of b.
+                 Algorithm can be optimized!
 """
+
 import random
 import core
 

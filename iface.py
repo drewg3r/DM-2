@@ -1,3 +1,10 @@
+"""
+ * Copyright © 2020 drewg3r
+ * https://github.com/drewg3r/DM-2
+
+iface.py: interface for main window.
+"""
+
 import sys
 from PyQt5 import QtWidgets
 import core, interface.w1, interface.about
